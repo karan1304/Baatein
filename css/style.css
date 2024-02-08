@@ -1,0 +1,164 @@
+body
+{
+margin:0;
+padding:0;
+font-family:"Diphylleia",sans-serif;
+display:flex;
+justify-content: center;
+align-items: center;
+height:100vh;
+background:url('../images/background.jpg');
+}
+.message-container
+{
+    height:400px;   
+    padding:5px 5px 0 5px ;
+    border-radius:20px;
+    /* background-color:#303030; */
+    border:2px solid #232323;
+    text-align:center;
+}
+
+.inputBtnBox
+{   display:flex;
+    /* border:2px solid black; */
+    justify-content: center;
+    align-items: center;
+    bottom:0;
+    padding:0;
+    margin:0;
+}
+#baatein
+{
+    margin:0 2px 5px 5px;
+    height:30px;
+    border-top-left-radius:50px;
+    border-bottom-left-radius:50px; 
+    border-top-right-radius:50px;
+    border-bottom-right-radius:50px; 
+    padding:0px 8px;
+    background-color:red;
+    color:white;
+    border:none;
+    outline:none;
+    
+}
+#baatein::placeholder
+{
+    color:white;
+    font-weight:bold;
+    opacity: 0.5;
+    
+}
+
+#send-btn
+{
+ /* margin:0 5px 5px 0px; */
+ border-radius:10px;
+ border:none;
+ font-size:16px;
+ color:red;
+ margin:0 0px 5px 3px;
+ padding:5px 8px;
+ background-color: #fff;
+ /* border:2px solid red; */
+ display:inline;
+ cursor:pointer;
+}
+
+#send-btn i
+{
+    border:2px solid red;
+    border-radius:50%;
+    padding:8px;
+    margin-bottom:2px;;
+}
+
+#mssg-box
+{
+padding:10px;
+/* padding-top:0px; */
+padding-bottom:0;
+height:345px;
+margin-bottom:0px;
+overflow-y:scroll;
+position: relative;
+}
+/* messages styling */
+
+/* .sender
+{
+    background-color: red;
+    padding:8px;
+    color:white;
+}
+.reciver
+{
+    border:2px solid green;
+    color:white;
+    padding:8px;
+} */
+
+#sender
+{
+    /* border:2px solid blue; */
+    margin:0;
+    margin-top:5px;
+    margin-bottom:7px;
+    padding:0;
+    padding:5px 5px 5px 8px;
+    text-align:left;
+    /* position:relative; */
+    
+    max-width:150px;
+    height:auto;
+    line-height: 1;
+    border-radius:10px;
+    word-wrap: break-word;
+    position:relative;
+    background-color:white;
+    color:red;
+}
+
+#sender::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -7px;
+    /* background-color:red; */
+    border-style: solid;
+    /* border-width: 15px 15px 0 0; */
+    /* border-width:0 0 15px 15px; */
+    border-width:15px 0 0 15px;
+    /* border-color: #DCF8C6 transparent transparent transparent; */
+    border-color: white transparent transparent transparent;
+  }
+
+
+
+/* style scroll-bar */
+  /* width */
+  /* width */
+::-webkit-scrollbar {
+    width: 5px;
+    display:none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    display:none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  
+  
